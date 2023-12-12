@@ -1,0 +1,18 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005Hp00000hNhR1IAK",
+      "createdByName": "Alejandro Ojeda",
+      "createdDate": "2023-12-12T14:17:00.000Z",
+      "fileName": "brandingSets/LEXTHEMINGPlants_theme.brandingSet",
+      "fullName": "LEXTHEMINGPlants_theme",
+      "id": "0LwHp000000LTilKAG",
+      "lastModifiedById": "005Hp00000hNhR1IAK",
+      "lastModifiedByName": "Alejandro Ojeda",
+      "lastModifiedDate": "2023-12-12T14:19:33.000Z",
+      "manageableState": "unmanaged",
+      "type": "BrandingSet"
+    }
+  ]
+}
