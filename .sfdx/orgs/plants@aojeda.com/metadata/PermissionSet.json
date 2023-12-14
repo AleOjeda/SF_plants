@@ -1,0 +1,45 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005Hp00000hNhR1IAK",
+      "createdByName": "Alejandro Ojeda",
+      "createdDate": "2023-12-13T17:14:26.000Z",
+      "fileName": "permissionsets/Plans_App.permissionset",
+      "fullName": "Plans_App",
+      "id": "0PSHp000003gzg1OAA",
+      "lastModifiedById": "005Hp00000hNhR1IAK",
+      "lastModifiedByName": "Alejandro Ojeda",
+      "lastModifiedDate": "2023-12-13T17:18:28.000Z",
+      "manageableState": "unmanaged",
+      "type": "PermissionSet"
+    },
+    {
+      "createdById": "005Hp00000iE9GIIA0",
+      "createdByName": "Automated Process",
+      "createdDate": "2023-12-12T02:00:56.000Z",
+      "fileName": "permissionsets/sfdcInternalInt__sfdc_scrt2.permissionset",
+      "fullName": "sfdcInternalInt__sfdc_scrt2",
+      "id": "0PSHp0000044mynOAA",
+      "lastModifiedById": "005Hp00000iE9GIIA0",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2023-12-12T02:03:53.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "sfdcInternalInt",
+      "type": "PermissionSet"
+    },
+    {
+      "createdById": "005Hp00000hNhR1IAK",
+      "createdByName": "Alejandro Ojeda",
+      "createdDate": "2023-12-12T02:00:56.000Z",
+      "fileName": "permissionsets/Experience_Profile_Manager.permissionset",
+      "fullName": "Experience_Profile_Manager",
+      "id": "0PSHp0000044mzUOAQ",
+      "lastModifiedById": "005Hp00000hNhR1IAK",
+      "lastModifiedByName": "Alejandro Ojeda",
+      "lastModifiedDate": "2023-12-12T02:00:56.000Z",
+      "manageableState": "unmanaged",
+      "type": "PermissionSet"
+    }
+  ]
+}
