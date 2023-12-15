@@ -1,0 +1,9 @@
+<template>
+  <template if:true={species.data}>
+    <template for:each={species.data} for:item="spec">
+      <div key={spec.Id}>
+        <c-species-tile specie={spec}></c-species-tile>
+      </div>
+    </template>
+  </template>
+</template>
