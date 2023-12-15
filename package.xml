@@ -25,6 +25,10 @@
 		<members>Species_Record_Page</members>
 		<name>FlexiPage</name>
 	</types>
-
+	<types>
+		<members>Species__c-Species Layout</members>
+		<name>Layout</name>
+	</types>
 	<version>58.0</version>
+
 </Package>
