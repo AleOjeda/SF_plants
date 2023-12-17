@@ -1,14 +1,22 @@
 <template>
-  <lightning-card title={specie.Name} icon-name="custom:custom5">
-    <lightning-button label="View Details" slot="actions"></lightning-button>
-    <!-- Body start -->
-    <p class="slds-var-p-horizontal_small">{specie.Description__c}</p>
-    <img
-      class="specie slds-align_absolute-center slds-var-m-around_medium"
-      src={specie.Image_URL__c}
-      alt={specie.Name}
-    />
-    <p class="slds-var-p-horizontal_small">{specie.Location__c}</p>
-    <!-- Body end -->
-  </lightning-card>
+  <div class="slds-align_absolute-center">
+    <lightning-card title={specie.Name} icon-name="custom:custom5">
+      <lightning-button
+        label="View Details"
+        slot="actions"
+        onclick={navigateToRecordViewPage}
+      ></lightning-button>
+      <!-- Body start -->
+      <p class="slds-var-p-horizontal_small">{specie.Description__c}</p>
+      <div class="slds-align_absolute-center">
+        <img
+          class="specie slds-var-m-around_medium"
+          src={specie.Image_URL__c}
+          alt={specie.Name}
+        />
+      </div>
+      <p class="slds-var-p-horizontal_small">{specie.Location__c}</p>
+      <!-- Body end -->
+    </lightning-card>
+  </div>
 </template>
