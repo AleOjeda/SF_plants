@@ -15,7 +15,24 @@
           alt={specie.Name}
         />
       </div>
-      <p class="slds-var-p-horizontal_small">{specie.Location__c}</p>
+      <div class="slds-var-p-horizontal_small slds-align_absolute-center">
+        <template if:true={isOutdoors}>
+          <!-- Show icon outdoors -->
+          <lightning-icon
+            icon-name="custom:custom3"
+            alternative-text="Outdoors"
+            title="Outdoors"
+          ></lightning-icon>
+        </template>
+        <template if:true={isIndoors}>
+          <!-- Show icon indoors -->
+          <lightning-icon
+            icon-name="standard:home"
+            alternative-text="Indoors"
+            title="Indoors"
+          ></lightning-icon>
+        </template>
+      </div>
       <!-- Body end -->
     </lightning-card>
   </div>
