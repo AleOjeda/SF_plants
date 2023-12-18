@@ -1,0 +1,41 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005Hp00000iE9GIIA0",
+      "createdByName": "Automated Process",
+      "createdDate": "2023-12-12T02:03:52.000Z",
+      "fileName": "milestoneTypes/Escalate Case.milestoneType",
+      "fullName": "Escalate Case",
+      "id": "557Hp000000GrffIAC",
+      "lastModifiedById": "005Hp00000iE9GIIA0",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2023-12-12T02:03:52.000Z",
+      "type": "MilestoneType"
+    },
+    {
+      "createdById": "005Hp00000iE9GIIA0",
+      "createdByName": "Automated Process",
+      "createdDate": "2023-12-12T02:03:52.000Z",
+      "fileName": "milestoneTypes/First Response to Customer.milestoneType",
+      "fullName": "First Response to Customer",
+      "id": "557Hp000000GrfeIAC",
+      "lastModifiedById": "005Hp00000iE9GIIA0",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2023-12-12T02:03:52.000Z",
+      "type": "MilestoneType"
+    },
+    {
+      "createdById": "005Hp00000iE9GIIA0",
+      "createdByName": "Automated Process",
+      "createdDate": "2023-12-12T02:03:52.000Z",
+      "fileName": "milestoneTypes/Close Case.milestoneType",
+      "fullName": "Close Case",
+      "id": "557Hp000000GrfgIAC",
+      "lastModifiedById": "005Hp00000iE9GIIA0",
+      "lastModifiedByName": "Automated Process",
+      "lastModifiedDate": "2023-12-12T02:03:52.000Z",
+      "type": "MilestoneType"
+    }
+  ]
+}

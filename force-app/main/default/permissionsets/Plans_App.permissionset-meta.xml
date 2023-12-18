@@ -51,16 +51,4 @@
         <tab>Species__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
-    <types>
-		<members>Plant__c.Last_Fertilized__c</members>
-		<members>Plant__c.Last_Watered__c</members>
-		<members>Plant__c.Next_Fertilization__c</members>
-		<members>Plant__c.Next_Water__c</members>
-		<members>Plant__c.Species__c</members>
-		<name>CustomField</name>
-	</types>
-    <types>
-		<members>Plant__c</members>
-		<name>CustomObject</name>
-	</types>
 </PermissionSet>

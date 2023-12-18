@@ -29,6 +29,17 @@
 		<members>Species__c-Species Layout</members>
 		<name>Layout</name>
 	</types>
+	<types>
+		<members>Plant__c.Last_Fertilized__c</members>
+		<members>Plant__c.Last_Watered__c</members>
+		<members>Plant__c.Next_Fertilization__c</members>
+		<members>Plant__c.Next_Water__c</members>
+		<members>Plant__c.Species__c</members>
+		<name>CustomField</name>
+	</types>
+    <types>
+		<members>Plant__c</members>
+		<name>CustomObject</name>
+	</types>
 	<version>58.0</version>
-
 </Package>
