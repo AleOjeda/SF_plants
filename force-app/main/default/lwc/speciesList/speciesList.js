@@ -3,7 +3,8 @@ import getAllSpec from "@salesforce/apex/SpeciesService.getFilteredSpecies";
 
 export default class SpeciesList extends LightningElement {
   // PROPERTIES, GETTERS & SETTERS
-  searchText = ""; // Inicializo para que me otorgue las plantas en load.
+  searchText = "";
+  // Inicializo para que me otorgue las plantas en load.
 
   // LIFECYCLE HOOKS
 
