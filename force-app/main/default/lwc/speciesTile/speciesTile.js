@@ -1,6 +1,6 @@
 import { LightningElement, api } from "lwc";
-
-export default class SpeciesTile extends LightningElement {
+import { NavigationMixin } from "lightning/navigation";
+export default class SpeciesTile extends NavigationMixin(LightningElement) {
   @api specie;
 
   get isOutdoors() {
@@ -12,6 +12,14 @@ export default class SpeciesTile extends LightningElement {
   }
 
   navigateToRecordViewPage() {
-    console.log("hola");
+    /* Navigate to Record View Page */
+    this[NavigationMixin.Navigate]({
+      type: "standard__recordPage",
+      attributes: {
+        objectApiName: "Species__c",
+        recordId: this.specie.Id,
+        actionName: "view"
+      }
+    });
   }
 }
