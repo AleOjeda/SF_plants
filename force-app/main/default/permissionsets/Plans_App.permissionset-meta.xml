@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSet xmlns="https://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>My_Plants</application>
         <visible>true</visible>
@@ -51,4 +51,16 @@
         <tab>Species__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <types>
+		<members>Plant__c.Last_Fertilized__c</members>
+		<members>Plant__c.Last_Watered__c</members>
+		<members>Plant__c.Next_Fertilization__c</members>
+		<members>Plant__c.Next_Water__c</members>
+		<members>Plant__c.Species__c</members>
+		<name>CustomField</name>
+	</types>
+    <types>
+		<members>Plant__c</members>
+		<name>CustomObject</name>
+	</types>
 </PermissionSet>
