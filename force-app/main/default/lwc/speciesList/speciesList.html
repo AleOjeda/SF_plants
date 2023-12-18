@@ -1,9 +1,13 @@
 <template>
-  <template if:true={species.data}>
-    <template for:each={species.data} for:item="spec">
-      <div key={spec.Id}>
-        <c-species-tile specie={spec}></c-species-tile>
-      </div>
-    </template>
-  </template>
+  <div class="slds-align_absolute-center">
+    <div class="slds-grid slds-wrap slds-grid_align-spread grid">
+      <template if:true={species.data}>
+        <template for:each={species.data} for:item="spec">
+          <div key={spec.Id}>
+            <c-species-tile specie={spec}></c-species-tile>
+          </div>
+        </template>
+      </template>
+    </div>
+  </div>
 </template>
