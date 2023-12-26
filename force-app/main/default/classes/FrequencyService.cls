@@ -23,6 +23,11 @@ public with sharing class FrequencyService {
   }
 
   public static Integer getFertilizationDays(Species__c specie) {
-    return 30;
+    Integer month = System.today().month();
+    if (summerMonths.contains(month)) {
+      return daysByFrequency.get(specie.Summer_Fertilization_Frequency__c);
+    } else {
+      return daysByFrequency.get(specie.Winter_Fertilization_Frequency__c);
+    }
   }
 }
