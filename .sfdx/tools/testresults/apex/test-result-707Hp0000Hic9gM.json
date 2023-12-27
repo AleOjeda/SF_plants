@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Dec 27 2023 11:46:48 AM",
+    "testExecutionTimeInMs": 14,
+    "testTotalTimeInMs": 14,
+    "commandTimeInMs": 460,
+    "hostname": "https://aojedacom-dev-ed.develop.my.salesforce.com",
+    "orgId": "00DHp000003UBO8MAO",
+    "username": "plants@aojeda.com",
+    "testRunId": "707Hp0000Hic9gM",
+    "userId": "005Hp00000hNhR1IAK"
+  },
+  "tests": [
+    {
+      "id": "07MHp00000Eqq7YMAR",
+      "queueItemId": "709Hp000001eTfrIAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "707Hp0000Hic9gMIQQ",
+      "methodName": "getWateringDays_wateringFreqDailyAndSummer_oneDay",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01pHp00000V3PAMIA3",
+        "name": "FrequencyServiceTest",
+        "namespacePrefix": null,
+        "fullName": "FrequencyServiceTest"
+      },
+      "runTime": 14,
+      "testTimestamp": "2023-12-27T14:46:48.000+0000",
+      "fullName": "FrequencyServiceTest.getWateringDays_wateringFreqDailyAndSummer_oneDay"
+    }
+  ]
+}
