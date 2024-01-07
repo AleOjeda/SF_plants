@@ -13,8 +13,8 @@ public with sharing class FrequencyService {
 
   static Set<Integer> summerMonths = new Set<Integer>{ 5, 6, 7, 8, 9 };
 
-  public static Integer getWateringDays(Species__c specie) {
-    Integer month = System.today().month();
+  public static Integer getWateringDays(Species__c specie, DateService dateServiceInstance) {
+    Integer month = new dateServiceInstance.getCurrentMonth();
     if (summerMonths.contains(month)) {
       return daysByFrequency.get(specie.Summer_Watering_Frequency__c);
     } else {
@@ -22,8 +22,8 @@ public with sharing class FrequencyService {
     }
   }
 
-  public static Integer getFertilizationDays(Species__c specie) {
-    Integer month = System.today().month();
+  public static Integer getFertilizationDays(Species__c specie, DateService dateServiceInstance) {
+    Integer month = new dateServiceInstance.getCurrentMonth();
     if (summerMonths.contains(month)) {
       return daysByFrequency.get(specie.Summer_Fertilization_Frequency__c);
     } else {

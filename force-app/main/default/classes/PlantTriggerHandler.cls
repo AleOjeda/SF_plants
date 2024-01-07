@@ -70,7 +70,10 @@ public with sharing class PlantTriggerHandler {
   ) {
     Id specieId = newPlant.Species__c;
     Species__c specie = speciesById.get(specieId);
-    Integer daysToAdd = FrequencyService.getWateringDays(specie);
+    Integer daysToAdd = FrequencyService.getWateringDays(
+      specie,
+      new DateService()
+    );
     newPlant.Next_Water__c = newPlant.Last_Watered__c.addDays(daysToAdd);
   }
 
@@ -80,7 +83,10 @@ public with sharing class PlantTriggerHandler {
   ) {
     Id specieId = newPlant.Species__c;
     Species__c specie = speciesById.get(specieId);
-    Integer daysToAdd = FrequencyService.getFertilizationDays(specie);
+    Integer daysToAdd = FrequencyService.getFertilizationDays(
+      specie,
+      new DateService()
+    );
     newPlant.Next_Fertilization__c = newPlant.Last_Fertilized__c.addDays(
       daysToAdd
     );
