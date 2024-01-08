@@ -1,5 +1,5 @@
 public with sharing class DateService {
-  public static getCurrentMonth() {
+  public Integer getCurrentMonth() {
     return System.today().month();
   }
 }
