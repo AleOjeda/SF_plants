@@ -1,5 +1,5 @@
 <template>
-  <div class="slds-align_absolute-center">
+  <template if:true={specie}>
     <lightning-card title={specie.Name} icon-name="custom:custom5">
       <lightning-button
         label="View Details"
@@ -7,7 +7,12 @@
         onclick={navigateToRecordViewPage}
       ></lightning-button>
       <!-- Body start -->
-      <p class="slds-var-p-horizontal_small">{specie.Description__c}</p>
+      <p
+        class="slds-var-p-horizontal_small slds-line-clamp"
+        style="height: 4rem"
+      >
+        {specie.Description__c}
+      </p>
       <div class="slds-align_absolute-center">
         <img
           class="specie slds-var-m-around_medium"
@@ -15,7 +20,7 @@
           alt={specie.Name}
         />
       </div>
-      <div class="slds-var-p-horizontal_small slds-align_absolute-center">
+      <p class="slds-var-p-horizontal_small slds-align_absolute-center">
         <template if:true={isOutdoors}>
           <!-- Show icon outdoors -->
           <lightning-icon
@@ -30,10 +35,11 @@
             icon-name="standard:home"
             alternative-text="Indoors"
             title="Indoors"
+            class="slds-var-m-left_small"
           ></lightning-icon>
         </template>
-      </div>
+      </p>
       <!-- Body end -->
     </lightning-card>
-  </div>
+  </template>
 </template>

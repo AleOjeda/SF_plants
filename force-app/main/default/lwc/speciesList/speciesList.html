@@ -1,18 +1,19 @@
 <template>
-  <div class="slds-align_absolute-center">
+  <div class="container slds-var-p-around_medium">
     <!-- Default/basic -->
     <lightning-input
       type="text"
-      label="Enter some text"
+      label="Enter some text to filter species"
       onchange={handleInputChange}
     ></lightning-input>
-  </div>
-  <div class="slds-align_absolute-center">
-    <div class="slds-grid slds-wrap slds-grid_align-spread grid">
+    <div class="slds-grid slds-wrap slds-align_absolute-center">
       <template if:true={species.data}>
         <template for:each={species.data} for:item="spec">
           <div key={spec.Id}>
-            <c-species-tile specie={spec}></c-species-tile>
+            <c-species-tile
+              specie={spec}
+              class="slds-col slds-var-m-around_small"
+            ></c-species-tile>
           </div>
         </template>
       </template>
