@@ -1,14 +1,15 @@
 import { LightningElement, api } from "lwc";
 import { NavigationMixin } from "lightning/navigation";
+
 export default class SpeciesTile extends NavigationMixin(LightningElement) {
   @api specie;
 
   get isOutdoors() {
-    return this.specie.Location__c.includes("Outdoors");
+    return this.specie.Location__c?.includes("Outdoors");
   }
 
   get isIndoors() {
-    return this.specie.Location__c.includes("Indoors");
+    return this.specie.Location__c?.includes("Indoors");
   }
 
   navigateToRecordViewPage() {
