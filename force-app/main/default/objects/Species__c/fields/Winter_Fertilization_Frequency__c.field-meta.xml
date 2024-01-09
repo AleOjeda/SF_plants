@@ -7,7 +7,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -16,9 +15,9 @@
                 <label>Weekly</label>
             </value>
             <value>
-                <fullName>Every other Week</fullName>
+                <fullName>Every other week</fullName>
                 <default>false</default>
-                <label>Every other Week</label>
+                <label>Every other week</label>
             </value>
             <value>
                 <fullName>Monthly</fullName>
