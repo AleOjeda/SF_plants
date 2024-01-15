@@ -37,7 +37,7 @@ public with sharing class ForecastService {
   }
 
   public class Temperatures {
-    public String max;
-    public String min;
+    public Integer max;
+    public Integer min;
   }
 }
