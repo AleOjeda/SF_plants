@@ -52,6 +52,37 @@ public with sharing class ForecastService {
       } catch (Exception e) {
         System.debug('Problem sending notification: ' + e.getMessage());
       }
+
+      // Create event
+      System.debug('Before publishing platform event.');
+      Plant_with_Problem__e plantsWithProblemEvent = new Plant_with_Problem__e();
+      // Set field values
+      plantsWithProblemEvent.Plant_Id__c = plantWithProblems.Id;
+      plantsWithProblemEvent.Tipo_de_Alerta__c = 'frio';
+
+      List<Plant_with_Problem__e> plantsWithProblemEvents = new List<Plant_with_Problem__e>();
+      plantsWithProblemEvents.add(plantsWithProblemEvent);
+
+      // Call method to publish events
+      List<Database.SaveResult> results = EventBus.publish(
+        plantsWithProblemEvents
+      );
+
+      // Inspect publishing result for each event
+      for (Database.SaveResult sr : results) {
+        if (sr.isSuccess()) {
+          System.debug('Successfully published event.');
+        } else {
+          for (Database.Error err : sr.getErrors()) {
+            System.debug(
+              'Error returned: ' +
+                err.getStatusCode() +
+                ' - ' +
+                err.getMessage()
+            );
+          }
+        }
+      }
     }
   }
 
