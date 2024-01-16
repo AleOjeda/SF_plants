@@ -1,10 +1,8 @@
 [
-    {
-        "sobject": "Species__c",
-        "saveRefs": true,
-        "resolveRefs": false,
-        "files": [
-            "export-demo-Species__cs.json"
-        ]
-    }
+  {
+    "sobject": "Species__c",
+    "saveRefs": true,
+    "resolveRefs": false,
+    "files": ["export-demo-Species__cs.json"]
+  }
 ]

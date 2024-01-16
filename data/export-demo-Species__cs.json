@@ -1,21 +1,21 @@
 {
-    "records": [
-        {
-            "attributes": {
-                "type": "Species__c",
-                "referenceId": "Species__cRef1"
-            },
-            "Description__c": "Planta muy curativa",
-            "Ideal_Max_Temperature__c": null,
-            "Ideal_Min_Temperature__c": 23,
-            "Image_URL__c": "https://www.elhuertoemporio.cl/wp-content/uploads/aloe-gastroactitud2.jpg",
-            "Light_Notes__c": null,
-            "Light__c": "Full Sun",
-            "Location__c": "Outdoors",
-            "Name": "Aloe Vera",
-            "Pulverization__c": false,
-            "Sowing__c": null,
-            "Type__c": "Ornamental"
-        }
-    ]
+  "records": [
+    {
+      "attributes": {
+        "type": "Species__c",
+        "referenceId": "Species__cRef1"
+      },
+      "Description__c": "Planta muy curativa",
+      "Ideal_Max_Temperature__c": null,
+      "Ideal_Min_Temperature__c": 23,
+      "Image_URL__c": "https://www.elhuertoemporio.cl/wp-content/uploads/aloe-gastroactitud2.jpg",
+      "Light_Notes__c": null,
+      "Light__c": "Full Sun",
+      "Location__c": "Outdoors",
+      "Name": "Aloe Vera",
+      "Pulverization__c": false,
+      "Sowing__c": null,
+      "Type__c": "Ornamental"
+    }
+  ]
 }

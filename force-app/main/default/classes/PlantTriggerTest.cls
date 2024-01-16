@@ -57,7 +57,7 @@ private with sharing class PlantTriggerTest {
     // THEN
     plant1 = [SELECT Next_Water__c FROM Plant__c WHERE Id = :plant1.Id];
     System.assertEquals(
-      System.today() +15,
+      System.today() + 15,
       plant1.Next_Water__c,
       'Expected today + 15 days returned'
     );
