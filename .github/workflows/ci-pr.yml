@@ -69,7 +69,8 @@ jobs:
   # Formatting and linting only runs on human-submitted PRs
   format-lint-lwc-tests:
     # if: github.actor != 'trailheadapps-bot'
-    runs-on: trailheadapps-Ubuntu
+    # runs-on: trailheadapps-Ubuntu
+    runs-on: ubuntu-latest
     steps:
       # Checkout the source code
       - name: "Checkout source code"
@@ -93,7 +94,8 @@ jobs:
       # Install npm dependencies for Prettier and Jest
       - name: "Install npm dependencies"
         if: steps.cache-npm.outputs.cache-hit != 'true'
-        run: HUSKY=0 npm ci
+        # run: HUSKY=0 npm ci
+        run: npm ci
 
       # Prettier formatting
       - name: "Code formatting verification with Prettier"
