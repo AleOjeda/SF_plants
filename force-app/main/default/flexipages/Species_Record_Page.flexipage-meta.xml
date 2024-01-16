@@ -121,7 +121,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Ideal_Max_Temperature__c</fieldItem>
+                <fieldItem>Record.Max_Temperature__c</fieldItem>
                 <identifier>RecordIdeal_Max_Temperature_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -131,7 +131,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Ideal_Min_Temperature__c</fieldItem>
+                <fieldItem>Record.Min_Temperature__c</fieldItem>
                 <identifier>RecordIdeal_Min_Temperature_cField</identifier>
             </fieldInstance>
         </itemInstances>
