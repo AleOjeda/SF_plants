@@ -1,0 +1,27 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <div class="slds-var-m-around_x-small">
+    <!-- Species - Name -->
+    <!-- Plant - Species__c (automatic) -->
+    <!-- Plant - Acquisition_Date__c -->
+    <lightning-input
+      label="Species Name"
+      value={speciesName}
+      onchange={handleSpeciesNameChange}
+    ></lightning-input>
+    <lightning-input
+      label="Plant Acquisition Date"
+      type="date"
+      value={plantAcquisitionDate}
+      onchange={handleAcquisitionDateChange}
+    ></lightning-input>
+  </div>
+
+  <div slot="footer">
+    <lightning-button
+      onclick={handleButtonClick}
+      label="Create Species & Plant"
+      class="slds-var-m-left_xx-small"
+    ></lightning-button>
+  </div>
+</template>

@@ -20,4 +20,31 @@ public with sharing class SpeciesService {
       ORDER BY Name
     ];
   }
+
+  @AuraEnabled
+  public static void createSpeciesWithPlant(
+    String speciesName,
+    Date plantAcquisitionDate
+  ) {
+    // Validar que los parametros no son nulos...
+
+    // Comprobar que la especie no existe ya - SOQL
+
+    // Crear species rellenando sus campos obligatorios
+    Species__c newSpecies = new Species__c();
+    newSpecies.Name = speciesName;
+    newSpecies.Summer_Watering_Frequency__c = 'Daily';
+    newSpecies.Summer_Fertilization_Frequency__c = 'Daily';
+    newSpecies.Winter_Watering_Frequency__c = 'Weekly';
+    newSpecies.Winter_Fertilization_Frequency__c = 'Daily';
+    insert newSpecies;
+
+    // Crear planta, asociada con esa especie
+    Plant__c newPlant = new Plant__c();
+    newPlant.Acquisition_Date__c = plantAcquisitionDate;
+    newPlant.Species__c = newSpecies.Id;
+    newPlant.Last_Watered__c = System.today();
+    newPlant.Last_Fertilized__c = System.today();
+    insert newPlant;
+  }
 }
