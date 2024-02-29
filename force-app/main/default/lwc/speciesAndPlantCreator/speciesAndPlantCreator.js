@@ -1,10 +1,11 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 import createSpeciesWithPlant from "@salesforce/apex/SpeciesService.createSpeciesWithPlant";
-
+import { CloseActionScreenEvent } from "lightning/actions";
 export default class SpeciesAndPlantCreator extends LightningElement {
   speciesName;
   plantAcquisitionDate;
+  @api recordId;
   //handleSpeciesNameChange
   handleSpeciesNameChange(event) {
     this.speciesName = event.target.value;
@@ -13,10 +14,14 @@ export default class SpeciesAndPlantCreator extends LightningElement {
   handleAcquisitionDateChange(event) {
     this.plantAcquisitionDate = event.target.value;
   }
+  handleCancelButtonClick() {
+    this.dispatchEvent(new CloseActionScreenEvent());
+  }
   //handleButtonClick
-  handleButtonClick() {
+  handleCreateButtonClick() {
     console.log(
       "Registro desde el que se lanzó la quick action: " +
+        this.recordId +
         this.plantAcquisitionDate +
         this.speciesName
     );
