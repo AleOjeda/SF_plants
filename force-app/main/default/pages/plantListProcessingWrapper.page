@@ -1,0 +1,24 @@
+<apex:page standardController="Plant__c" recordSetVar="plants">
+  <apex:includeLightning />
+
+  {!plants}
+
+  <div id="myComponent" />
+
+  <script>
+    $Lightning.use("c:plantListProcessingWrapperApp", function () {
+      $Lightning.createComponent(
+        "c:plantListProcessing",
+        {
+          label: "Press Me!",
+          plantList: "{!plants}"
+        },
+        "myComponent",
+        function (cmp) {
+          console.log("Plant List Component was created");
+          // do some stuff
+        }
+      );
+    });
+  </script>
+</apex:page>
